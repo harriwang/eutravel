@@ -45,6 +45,7 @@ function emptyState() {
     arrivals: {},
     dialogs: {},
     welcomeSeen: false,
+    posterShown: false,
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString(),
   };
@@ -153,6 +154,11 @@ class StateManager {
   markWelcomeSeen() {
     if (this.state.welcomeSeen) return;
     this.setState({ ...this.state, welcomeSeen: true });
+  }
+
+  markPosterShown() {
+    if (this.state.posterShown) return;
+    this.setState({ ...this.state, posterShown: true });
   }
 
   reset() {

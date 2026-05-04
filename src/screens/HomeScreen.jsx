@@ -1,14 +1,14 @@
 import { CITIES, CITY_ORDER, PHOTOS } from "../../data.js";
 import { useStore, isUnlocked, getProgress } from "../store.js";
 
-export default function HomeScreen({ onPickCity }) {
+export default function HomeScreen({ onPickCity, onShowPoster }) {
   const state = useStore();
-  const { done, total } = getProgress(state);
+  const { done, total, all } = getProgress(state);
 
   return (
     <div className="app-shell" style={{ paddingTop: 0 }}>
       <header className="home-header">
-        <h1 className="home-title">eutravel</h1>
+        <h1 className="home-title">French &amp; Italy</h1>
         <p className="home-sub">2026.5.16 — 5.31</p>
       </header>
 
@@ -56,6 +56,14 @@ export default function HomeScreen({ onPickCity }) {
           );
         })}
       </ul>
+
+      {all && (
+        <div style={{ padding: '32px 20px 16px' }}>
+          <button className="btn-ghost" onClick={onShowPoster} style={{ width: '100%' }}>
+            ✦ 再看一次海报
+          </button>
+        </div>
+      )}
     </div>
   );
 }

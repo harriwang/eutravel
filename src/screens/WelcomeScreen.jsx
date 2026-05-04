@@ -8,7 +8,7 @@ export default function WelcomeScreen({ onContinue }) {
 
   return (
     <div className="welcome">
-      <h1 className="welcome-title">eutravel</h1>
+      <h1 className="welcome-title">French &amp; Italy</h1>
 
       <div className="ornament"><span>小猫大冒险</span></div>
 

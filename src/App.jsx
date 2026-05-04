@@ -52,10 +52,10 @@ export default function App() {
     return () => { alive = false; };
   }, []);
 
-  // 监测 5 城是否全打卡 → 自动弹海报
+  // 监测 5 城是否全打卡 → 自动弹海报(看过一次后永久不再自动弹)
   useEffect(() => {
     const { all } = getProgress(state);
-    if (all && !showPoster && screen === "home") {
+    if (all && !state.posterShown && !showPoster && screen === "home") {
       setShowPoster(true);
     }
   }, [state, screen, showPoster]);
@@ -64,7 +64,7 @@ export default function App() {
     return (
       <div style={{ padding: 80, textAlign: "center", color: "var(--ink-faded)" }}>
         <p style={{ fontFamily: "var(--font-display)", fontStyle: "italic" }}>
-          eutravel
+          French &amp; Italy
         </p>
       </div>
     );
@@ -129,6 +129,7 @@ export default function App() {
           if (isUnlocked(state, cityId)) setScreen("city");
           else setScreen("arrival");
         }}
+        onShowPoster={() => setShowPoster(true)}
       />
       {showPoster && (
         <PosterScreen onClose={() => setShowPoster(false)} />

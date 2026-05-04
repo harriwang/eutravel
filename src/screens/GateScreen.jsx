@@ -55,7 +55,7 @@ export default function GateScreen({ onGated }) {
 
   return (
     <div className="gate">
-      <h1 className="gate-title">eutravel</h1>
+      <h1 className="gate-title">French &amp; Italy</h1>
       <p className="gate-sub">
         一段属于你的旅行<br />
         用一个口令保存所有记录

@@ -54,6 +54,7 @@ function emptyState() {
     arrivals: {},
     dialogs:  {},
     welcomeSeen: false,
+    posterShown: false,
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString(),
   };
@@ -93,6 +94,7 @@ export default async function handler(req, res) {
         arrivals:    incoming.arrivals    || {},
         dialogs:     incoming.dialogs     || {},
         welcomeSeen: !!incoming.welcomeSeen,
+        posterShown: !!incoming.posterShown,
         createdAt:   incoming.createdAt   || new Date().toISOString(),
         updatedAt:   new Date().toISOString(),
       };

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { CITIES } from "../../data.js";
 import { generatePoster, downloadDataURL } from "../../lib/poster-canvas.js";
-import { useStore, getOrderedArrivals } from "../store.js";
+import { useStore, store, getOrderedArrivals } from "../store.js";
 
 export default function PosterScreen({ onClose }) {
   const state = useStore();
@@ -25,11 +25,17 @@ export default function PosterScreen({ onClose }) {
 
   function download() {
     if (!dataURL) return;
-    downloadDataURL(dataURL, `eutravel-${Date.now()}.png`);
+    downloadDataURL(dataURL, `harri-and-dottie-${Date.now()}.png`);
+  }
+
+  function close() {
+    // 关闭时记下"看过海报",云端同步,以后不再自动弹
+    store.markPosterShown();
+    onClose();
   }
 
   return (
-    <div className="poster-overlay" onClick={onClose}>
+    <div className="poster-overlay" onClick={close}>
       <div className="poster-modal" onClick={(e) => e.stopPropagation()}>
         <h2 className="poster-title">旅行完成</h2>
         <p className="poster-sub">2026.5.16 — 5.31</p>
@@ -49,8 +55,8 @@ export default function PosterScreen({ onClose }) {
               <button className="btn-primary" onClick={download}>
                 下载海报
               </button>
-              <button className="btn-ghost" onClick={onClose}>
-                关闭
+              <button className="btn-ghost" onClick={close}>
+                关闭并继续浏览
               </button>
             </div>
           </>
