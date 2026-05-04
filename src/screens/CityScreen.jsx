@@ -55,7 +55,6 @@ export default function CityScreen({ cityId, onBack, onOpenDialog }) {
           <p className="spots-heading-zh">这座城市的地方</p>
           {spots.map(spot => (
             <div key={spot.id} className="spot-card">
-              <img className="spot-card-img" src={spot.photo} alt={spot.nameZh} />
               <div className="spot-card-body">
                 <p className="spot-card-zh">{spot.nameZh}</p>
                 <p className="spot-card-en">{spot.name}</p>

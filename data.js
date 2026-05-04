@@ -159,7 +159,7 @@ export const SPOTS = {
   paris: [
     {
       id: "louvre", name: "Louvre", nameZh: "卢浮宫",
-      vibe: "全世界最大的画上博物馆", photo: PHOTOS.louvre,
+      vibe: "全世界最大的画上博物馆",
       guide: [
         { name: "蒙娜丽莎", room: "德农馆 711 室", artist: "达芬奇", tip: "千万别花太多时间挤——画很小,人很多,意思一下就走" },
         { name: "米洛的维纳斯", room: "叙利馆 1 楼", artist: "古希腊", tip: "从背后看也很美,绕一圈" },
@@ -169,7 +169,7 @@ export const SPOTS = {
     },
     {
       id: "orsay", name: "Musée d'Orsay", nameZh: "奥赛博物馆",
-      vibe: "印象派一网打尽的火车站", photo: PHOTOS.orsay,
+      vibe: "印象派一网打尽的火车站",
       guide: [
         { name: "罗讷河上的星夜", room: "5 楼印象派", artist: "梵高", tip: "梵高生前只卖出过一幅画" },
         { name: "煎饼磨坊的舞会", room: "5 楼印象派", artist: "雷诺阿", tip: "光斑像撒了一地金币" },
@@ -179,19 +179,19 @@ export const SPOTS = {
     },
     {
       id: "notredame", name: "Notre-Dame", nameZh: "巴黎圣母院",
-      vibe: "被火烧过、被雨果救过", photo: PHOTOS.notredame, guide: [],
+      vibe: "被火烧过、被雨果救过", guide: [],
     },
     {
       id: "eiffel", name: "Tour Eiffel", nameZh: "埃菲尔铁塔",
-      vibe: "巴黎人原本想拆掉它", photo: PHOTOS.eiffel, guide: [],
+      vibe: "巴黎人原本想拆掉它", guide: [],
     },
     {
       id: "shakespeare", name: "Shakespeare and Company", nameZh: "莎士比亚书店",
-      vibe: "海明威常蹭书的地方(虽然原版不是这家)", photo: PHOTOS.shakespeare, guide: [],
+      vibe: "海明威常蹭书的地方(虽然原版不是这家)", guide: [],
     },
     {
       id: "passages", name: "Passages Couverts", nameZh: "拱廊街",
-      vibe: "本雅明用一辈子研究的地方", photo: PHOTOS.passages,
+      vibe: "本雅明用一辈子研究的地方",
       guide: [
         { name: "Galerie Vivienne", room: "二区", artist: "—", tip: "巴黎现存最美的拱廊街,1823 年" },
         { name: "Passage des Panoramas", room: "二区", artist: "—", tip: "巴黎最古老的拱廊街,1799 年" },
@@ -199,7 +199,7 @@ export const SPOTS = {
     },
     {
       id: "seine", name: "La Seine", nameZh: "塞纳河",
-      vibe: "整座巴黎的脊柱", photo: PHOTOS.seine, guide: [],
+      vibe: "整座巴黎的脊柱", guide: [],
     },
   ],
 
@@ -207,7 +207,7 @@ export const SPOTS = {
   riviera: [
     {
       id: "cezanne_studio", name: "Atelier Cézanne", nameZh: "塞尚画室",
-      vibe: "塞尚最后画画的地方,原样保留", photo: PHOTOS.cezanne_studio,
+      vibe: "塞尚最后画画的地方,原样保留",
       guide: [
         { name: "圣维克多山", room: "画室东窗外", artist: "塞尚", tip: "他画了 87 次的那座山,从画室就能看见" },
         { name: "玩牌者", room: "画室藏品", artist: "塞尚", tip: "现代艺术市场最贵画作之一" },
@@ -215,37 +215,37 @@ export const SPOTS = {
     },
     {
       id: "promenade", name: "Promenade des Anglais", nameZh: "英国人散步道",
-      vibe: "七公里地中海蓝", photo: PHOTOS.promenade, guide: [],
+      vibe: "七公里地中海蓝", guide: [],
     },
     {
       id: "vieux_nice", name: "Vieux-Nice", nameZh: "尼斯老城",
-      vibe: "窄巷 · 老市场 · socca 香", photo: PHOTOS.vieux_nice, guide: [],
+      vibe: "窄巷 · 老市场 · socca 香", guide: [],
     },
     {
       id: "picasso_museum", name: "Musée Picasso (Antibes)", nameZh: "安提布毕加索美术馆",
-      vibe: "毕加索 1946 年的工作室原址", photo: PHOTOS.picasso_museum,
+      vibe: "毕加索 1946 年的工作室原址",
       guide: [
         { name: "生活的喜悦", room: "主厅", artist: "毕加索", tip: "二战刚结束,他在这里画下战后第一份快乐" },
       ],
     },
     {
       id: "cannes", name: "Cannes / La Croisette", nameZh: "戛纳·克鲁瓦塞特大道",
-      vibe: "红毯走完就是海", photo: PHOTOS.cannes,
+      vibe: "红毯走完就是海",
       guide: [
         { name: "电影宫(Palais des Festivals)", room: "克鲁瓦塞特大道", artist: "—", tip: "红毯阶梯就在这里,平时也能拍" },
       ],
     },
     {
       id: "eze", name: "Èze", nameZh: "埃兹小镇",
-      vibe: "悬崖上的中世纪石头村", photo: PHOTOS.eze, guide: [],
+      vibe: "悬崖上的中世纪石头村", guide: [],
     },
     {
       id: "monaco", name: "Monaco", nameZh: "摩纳哥",
-      vibe: "赌场 · F1 · 王妃 · 小国", photo: PHOTOS.monaco, guide: [],
+      vibe: "赌场 · F1 · 王妃 · 小国", guide: [],
     },
     {
       id: "saint_paul", name: "Saint-Paul-de-Vence", nameZh: "圣保罗德旺斯",
-      vibe: "夏加尔晚年住在这里", photo: PHOTOS.saint_paul,
+      vibe: "夏加尔晚年住在这里",
       guide: [
         { name: "夏加尔之墓", room: "村口墓园", artist: "—", tip: "墓碑朴素,常有人放小石头致意" },
       ],
@@ -256,27 +256,27 @@ export const SPOTS = {
   venice: [
     {
       id: "san_marco", name: "Piazza San Marco", nameZh: "圣马可广场",
-      vibe: "拿破仑说这是欧洲最美客厅", photo: PHOTOS.san_marco, guide: [],
+      vibe: "拿破仑说这是欧洲最美客厅", guide: [],
     },
     {
       id: "basilica_san_marco", name: "Basilica di San Marco", nameZh: "圣马可大教堂",
-      vibe: "圣人遗骨从埃及偷回来的", photo: PHOTOS.basilica_san_marco, guide: [],
+      vibe: "圣人遗骨从埃及偷回来的", guide: [],
     },
     {
       id: "salute", name: "Santa Maria della Salute", nameZh: "安康圣母圣殿",
-      vibe: "瘟疫中许愿盖的教堂", photo: PHOTOS.salute, guide: [],
+      vibe: "瘟疫中许愿盖的教堂", guide: [],
     },
     {
       id: "rialto", name: "Ponte di Rialto", nameZh: "里亚托桥",
-      vibe: "威尼斯商人交易过的桥", photo: PHOTOS.rialto, guide: [],
+      vibe: "威尼斯商人交易过的桥", guide: [],
     },
     {
       id: "acqua_alta", name: "Libreria Acqua Alta", nameZh: "沉船书店",
-      vibe: "书泡过水也照样卖", photo: PHOTOS.acqua_alta, guide: [],
+      vibe: "书泡过水也照样卖", guide: [],
     },
     {
       id: "pieta_church", name: "Chiesa della Pietà", nameZh: "Pietà 慈悲教堂",
-      vibe: "维瓦尔第教过书的孤儿院教堂", photo: PHOTOS.pieta_church, guide: [],
+      vibe: "维瓦尔第教过书的孤儿院教堂", guide: [],
     },
   ],
 
@@ -284,7 +284,7 @@ export const SPOTS = {
   florence: [
     {
       id: "uffizi", name: "Uffizi Gallery", nameZh: "乌菲兹美术馆",
-      vibe: "文艺复兴时期的朋友圈", photo: PHOTOS.uffizi,
+      vibe: "文艺复兴时期的朋友圈",
       guide: [
         { name: "维纳斯的诞生", room: "10-14 展厅", artist: "波提切利", tip: "早上开门就冲这里" },
         { name: "春", room: "10-14 展厅", artist: "波提切利", tip: "就在维纳斯旁边" },
@@ -294,7 +294,7 @@ export const SPOTS = {
     },
     {
       id: "accademia", name: "Galleria dell'Accademia", nameZh: "学院美术馆",
-      vibe: "大卫本人住这儿(不是复制品)", photo: PHOTOS.accademia,
+      vibe: "大卫本人住这儿(不是复制品)",
       guide: [
         { name: "大卫", room: "主厅", artist: "米开朗基罗", tip: "5 米高,正面之外还要看背面" },
         { name: "未完成的奴隶", room: "通往大卫的走廊", artist: "米开朗基罗", tip: "半凿出来的人体,据说是故意停下的" },
@@ -302,15 +302,15 @@ export const SPOTS = {
     },
     {
       id: "duomo", name: "Il Duomo", nameZh: "圣母百花大教堂",
-      vibe: "一座没人知道怎么盖的穹顶", photo: PHOTOS.duomo, guide: [],
+      vibe: "一座没人知道怎么盖的穹顶", guide: [],
     },
     {
       id: "ponte", name: "Ponte Vecchio", nameZh: "老桥",
-      vibe: "从卖肉逆袭成卖珠宝", photo: PHOTOS.ponte, guide: [],
+      vibe: "从卖肉逆袭成卖珠宝", guide: [],
     },
     {
       id: "pisa", name: "Torre di Pisa", nameZh: "比萨斜塔",
-      vibe: "歪了 800 年还在歪", photo: PHOTOS.pisa, guide: [],
+      vibe: "歪了 800 年还在歪", guide: [],
     },
   ],
 
@@ -318,30 +318,30 @@ export const SPOTS = {
   rome: [
     {
       id: "pantheon", name: "Pantheon", nameZh: "万神殿",
-      vibe: "两千年前的混凝土,现代人复刻不出来", photo: PHOTOS.pantheon, guide: [],
+      vibe: "两千年前的混凝土,现代人复刻不出来", guide: [],
     },
     {
       id: "colosseum", name: "Colosseo", nameZh: "斗兽场",
-      vibe: "古罗马的体育馆+海洋公园+电影院", photo: PHOTOS.colosseum, guide: [],
+      vibe: "古罗马的体育馆+海洋公园+电影院", guide: [],
     },
     {
       id: "forum", name: "Foro Romano", nameZh: "古罗马广场",
-      vibe: "凯撒被刺的地方就在这", photo: PHOTOS.forum, guide: [],
+      vibe: "凯撒被刺的地方就在这", guide: [],
     },
     {
       id: "trevi", name: "Fontana di Trevi", nameZh: "特维雷许愿池",
-      vibe: "全世界最赚钱的喷泉", photo: PHOTOS.trevi, guide: [],
+      vibe: "全世界最赚钱的喷泉", guide: [],
     },
     {
       id: "st_peter", name: "Basilica di San Pietro", nameZh: "圣彼得大教堂",
-      vibe: "米开朗基罗设计的穹顶,贝尼尼造的广场", photo: PHOTOS.st_peter,
+      vibe: "米开朗基罗设计的穹顶,贝尼尼造的广场",
       guide: [
         { name: "圣殇(Pietà)", room: "入口右侧第一个礼拜堂", artist: "米开朗基罗", tip: "米开朗基罗 24 岁的作品,唯一签了名的" },
       ],
     },
     {
       id: "sistine", name: "Cappella Sistina", nameZh: "西斯廷礼拜堂",
-      vibe: "米开朗基罗的怨气凝结成了世界遗产", photo: PHOTOS.sistine,
+      vibe: "米开朗基罗的怨气凝结成了世界遗产",
       guide: [
         { name: "创世纪(天顶画)", room: "天顶", artist: "米开朗基罗", tip: "仰头找'创造亚当'那只手" },
         { name: "最后的审判", room: "祭坛墙", artist: "米开朗基罗", tip: "基督右手是天堂,左手是地狱" },
